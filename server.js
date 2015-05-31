@@ -5,7 +5,7 @@ var express = require('express'),
   errorHandler = require('errorhandler'),
   methodOverride = require('method-override'),
   hostname = process.env.HOSTNAME || 'localhost',
-  port = parseInt(process.env.PORT, 10) || 3000,
+  port = process.env.PORT || 3000,
   publicDir = __dirname + '/build';
 
 app.get('/', function(req, res) {
