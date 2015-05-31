@@ -5,7 +5,10 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='viewport', content='width=device-width')
     title Here Comes the Airplane
-    link(rel='stylesheet', href=contents.css['main.css'].url)
+    style.
+      html, body {
+        display: none;
+      }
   body
     header
       div.top
@@ -74,3 +77,4 @@ html(lang='en')
 
       ga('create', 'UA-104112-10', 'auto');
       ga('send', 'pageview');
+    link(rel='stylesheet', href=contents.css['main.css'].url)
