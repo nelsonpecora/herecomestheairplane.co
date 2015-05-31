@@ -1,9 +1,27 @@
-var connect = require('connect');
-var port = process.env.PORT || 3000;
-var oneDay = 86400000;
+'use strict';
+var express = require('express'),
+  app = express(),
+  bodyParser = require('body-parser'),
+  errorHandler = require('errorhandler'),
+  methodOverride = require('method-override'),
+  hostname = process.env.HOSTNAME || 'localhost',
+  port = parseInt(process.env.PORT, 10) || 3000,
+  publicDir = __dirname + '/build';
 
-connect.createServer(
-  connect.compress(),
-  connect.logger('short'),
-  connect.static(__dirname + '/build', { maxAge: oneDay })
-).listen(port);
+app.get('/', function(req, res) {
+  res.redirect('/index.html');
+});
+
+app.use(methodOverride());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static(publicDir));
+app.use(errorHandler({
+  dumpExceptions: true,
+  showStack: true
+}));
+
+console.log('Simple static server showing %s listening at http://%s:%s', publicDir, hostname, port);
+app.listen(port, hostname);
