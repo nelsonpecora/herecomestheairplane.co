@@ -6,10 +6,6 @@ var express = require('express'),
   methodOverride = require('method-override'),
   publicDir = __dirname + '/build';
 
-app.get('/', function(req, res) {
-  res.redirect('/index.html');
-});
-
 app.use(methodOverride());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
