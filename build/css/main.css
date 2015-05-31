@@ -1,0 +1,324 @@
+
+h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
+  margin: 0; padding: 0; border: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+.content-wrap {
+  width: 34em;
+  margin: 0 auto;
+}
+
+body, a {
+  color: #171717;
+}
+
+a:hover {
+  color: #1675C9;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2.25em;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  color: #fff;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  font-size: 1.25em;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+
+.cta {
+  margin: 10px auto;
+  background-color: #1675c9;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 100ms ease-out;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.cta:hover {
+  background-color: #1361A5;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 200ms ease-out;
+}
+
+h3 {
+  font-size: 2em;
+  color: #1675C9;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* page header */
+
+header {
+  width: 100%;
+}
+
+.top {
+  width: 100%;
+  background-color: #1675c9;
+  color: #fff !important;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+}
+
+.logo {
+  font-size: 90%;
+  float: left;
+  margin: 0;
+}
+
+.questions {
+  font-size: 90%;
+  float: right;
+  text-align: right;
+  margin: 0;
+}
+
+.questions a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.questions a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.splash {
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  background: url(../images/baby.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+/* middle of the page stuff */
+
+.how-it-works,
+.pricing,
+.trust-and-security,
+.pre-footer {
+  width: 100%;
+  padding: 20px;
+}
+
+/* threes */
+
+.three {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.three-subhead {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #999;
+}
+
+.per-month {
+  color: #1675c9;
+}
+
+.small {
+  font-size: 70%;
+  font-style: italic;
+}
+
+blockquote {
+  padding: 20px;
+  background-color: #eee;
+  font-style: italic;
+  color: #666;
+  font-size: 1.125em;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.quote:before {
+  content: '“';
+  font-size: 5em;
+  position: absolute;
+  color: #dfdfdf;
+  opacity: .5;
+  top: -36px;
+  left: 0;
+}
+
+.quote:after {
+  content: '”';
+  font-size: 5em;
+  position: absolute;
+  color: #dfdfdf;
+  opacity: .5;
+  bottom: -80px;
+  right: 6px;
+}
+
+.quote-attrib {
+  margin: 0;
+}
+
+.italic {
+  font-size: 80%;
+  font-style: italic;
+  color: #666;
+  padding-top: 30px;
+}
+
+/* page footer */
+
+footer {
+  margin: 3em 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+footer p {
+  font-size: 70%;
+}
+
+@media (min-width: 600px) {
+  .splash {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.35em;
+  }
+
+  h3 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+
+  .cta {
+    margin: 30px auto 10px;
+  }
+
+  .how-it-works,
+  .pricing,
+  .trust-and-security,
+  .pre-footer {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  blockquote {
+    padding: 24px 44px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer p {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .top {
+    padding: 0 20px;
+  }
+
+  .splash {
+    padding: 80px 20px;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    padding: 20px 0;
+    margin: 0;
+
+  }
+
+  .cta {
+    margin: 40px auto 10px;
+  }
+
+  .three-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .three {
+    flex: 0 0 240px;
+    margin: 10px 20px 0;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+
+  blockquote {
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .splash {
+    padding: 100px 30px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .three-wrapper {
+    margin-top: 30px;
+  }
+}
