@@ -1,2 +1,2 @@
 # herecomestheairplane.co
-Apps are the new moms!
+Startups are the new moms!

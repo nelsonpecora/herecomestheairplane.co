@@ -1,0 +1,14 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Here Comes the Airplane",
+    "owner": "Nelson Pecora",
+    "description": "Tired of having to put the food in your own mouth?"
+  },
+  "plugins": [],
+  "require": {},
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {}
+}
