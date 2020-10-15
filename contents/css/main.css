@@ -3,7 +3,9 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
-  margin: 0; padding: 0; border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -133,10 +135,7 @@ header {
 
 /* middle of the page stuff */
 
-.how-it-works,
-.pricing,
-.trust-and-security,
-.pre-footer {
+.how-it-works, .pricing, .trust-and-security, .pre-footer {
   width: 100%;
   padding: 20px;
 }
@@ -220,46 +219,42 @@ footer p {
   font-size: 70%;
 }
 
+.webring {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 @media (min-width: 600px) {
   .splash {
     padding: 40px 20px;
   }
-
   h1 {
     font-size: 2.5em;
   }
-
   h2 {
     font-size: 1.35em;
   }
-
   h3 {
     font-size: 2.25em;
     line-height: 1.25em;
   }
-
   .cta {
     margin: 30px auto 10px;
   }
-
-  .how-it-works,
-  .pricing,
-  .trust-and-security,
-  .pre-footer {
+  .how-it-works, .pricing, .trust-and-security, .pre-footer {
     width: 80%;
     margin: 0 auto;
     max-width: 600px;
   }
-
   blockquote {
     padding: 24px 44px;
   }
-
   footer {
     display: flex;
     justify-content: center;
   }
-
   footer p {
     margin: 10px;
   }
@@ -269,32 +264,25 @@ footer p {
   .top {
     padding: 0 20px;
   }
-
   .splash {
     padding: 80px 20px;
   }
-
   h1 {
     font-size: 3em;
     margin: 20px 0;
   }
-
   h2 {
     font-size: 1.5em;
     padding: 20px 0;
     margin: 0;
-
   }
-
   .cta {
     margin: 40px auto 10px;
   }
-
   .three-wrapper {
     display: flex;
     justify-content: center;
   }
-
   .three {
     flex: 0 0 240px;
     margin: 10px 20px 0;
@@ -302,7 +290,6 @@ footer p {
     border: 1px solid #eee;
     border-radius: 10px;
   }
-
   blockquote {
     margin: 40px 0;
   }
@@ -312,15 +299,12 @@ footer p {
   .splash {
     padding: 100px 30px;
   }
-
   h1 {
     font-size: 4em;
   }
-
   h2 {
     font-size: 2em;
   }
-
   .three-wrapper {
     margin-top: 30px;
   }
